@@ -1,0 +1,36 @@
+{
+    "name": "MVP",
+    "schema": [{
+        "type": "tab",
+        "label": "MVP",
+        "sections": [
+            {
+                "label": "Banner Content",
+                "settings": [
+                    {
+                        "type": "select",
+                        "label": "Alignment",
+                        "id": "alignment",
+                        "default": "",
+                        "typeMeta": {
+                            "selectOptions": [
+                                {
+                                    "label": "left",
+                                    "value": ""
+                                },
+                                {
+                                    "label": "right",
+                                    "value": "right"
+                                },
+                                {
+                                    "label": "center",
+                                    "value": "center"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ]
+    }]
+}

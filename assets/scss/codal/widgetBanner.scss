@@ -35,7 +35,7 @@
                 height: 100%;
                 width: 100%;
                 // build this feature out so that the background overlay covers the whole image by defualt but the user can confirgure the direction, color fade %, opacity, and colors
-                background: linear-gradient(90.15deg, rgba(0, 0, 0, 0.6) -0.6%, rgba(0, 0, 0, 0) 99.87%), transparent;
+                background: linear-gradient(90.15deg, rgba(0, 0, 0, 0) 99.87%), transparent;
                 z-index: 1;
             }
         }

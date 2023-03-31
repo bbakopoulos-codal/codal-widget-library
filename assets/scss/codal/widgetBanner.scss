@@ -39,6 +39,12 @@
                 z-index: 1;
             }
         }
+
+        &.color {
+            img {
+                display: none;
+            }
+        }
     }
 
     .widgetBanner-content {
@@ -62,6 +68,67 @@
         @media (min-width: '1441px') {
             padding: 50px 130px;
             min-height: 600px;
+        }
+
+        &.small {
+            min-height: 300px;
+            padding: 20px;
+
+            @include breakpoint('medium') {
+                min-height: 330px;
+                padding: 20px 40px;
+            }
+
+            @media (min-width: '1024px') {
+                padding: 40px 130px;
+            }
+
+            @include breakpoint('large') {
+                padding: 40px 130px;
+                min-height: 360px;
+            }
+
+            .widgetBanner-heading {
+                font-size: 24px;
+
+                @media (min-width: '801px') {
+                    font-size: 30px;
+                }
+
+                @media (min-width: '1261px') {
+                    font-size: 50px;
+                }
+            }
+        }
+
+        &.medium {
+            min-height: 350px;
+
+            @include breakpoint('medium') {
+                min-height: 400px;
+                padding: 20px 40px;
+            }
+
+            @media (min-width: '1024px') {
+                padding: 30px 50px;
+            }
+
+            @include breakpoint('large') {
+                min-height: 450px;
+                padding: 40px 130px;
+            }
+
+            .widgetBanner-heading {
+                font-size: 24px;
+
+                @media (min-width: '801px') {
+                    font-size: 30px;
+                }
+
+                @media (min-width: '1261px') {
+                    font-size: 50px;
+                }
+            }
         }
 
         .widgetBanner-subHeading {
@@ -98,8 +165,10 @@
             list-style: none;
             display: flex;
             flex-wrap: wrap;
-
+            justify-content: center;
+                        
             @media (min-width: '551px') {
+                justify-content: flex-start;
                 max-width: 540px;
             }
 
@@ -122,6 +191,7 @@
                     justify-content: center;
                     // make border radius a toggle feature
                     border-radius: 30px;
+                    min-width: 200px;
 
                     svg {
                         display: none;

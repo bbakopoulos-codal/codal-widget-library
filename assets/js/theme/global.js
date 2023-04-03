@@ -13,6 +13,7 @@ import cartPreview from './global/cart-preview';
 import privacyCookieNotification from './global/cookieNotification';
 import carousel from './common/carousel';
 import svgInjector from './global/svg-injector';
+import script from '../../../templates/widgets/featured-cards/script.js'
 
 export default class Global extends PageManager {
     onReady() {

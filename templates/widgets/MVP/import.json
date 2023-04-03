@@ -311,7 +311,8 @@
             },
             {
                 "label": "Button Settings",
-                "settings": [{
+                "settings": [
+                    {
                         "type": "visibility",
                         "label": "Show Button #1",
                         "id": "show_btn_1",

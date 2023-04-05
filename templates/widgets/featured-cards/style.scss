@@ -21,15 +21,22 @@
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
+            transition: all .3s ease-in-out;
 
             .featuredCards-img {
-                width: 100%;
                 flex-grow: 1;
+                position: relative;
+                width: 100%;
+                min-height: 300px;
+
+                @media (min-width: 551px) {
+                    min-height: 150px;
+                }
 
                 img {
-                    object-fit: cover;
-                    width: 100%;
                     height: 100%;
+                    width: 100%;
+                    object-fit: cover;
                 }
             }
 
@@ -44,6 +51,147 @@
                     display: block;
                     padding: 16px 0;
                     transition: all .3s ease-in-out;
+                }
+            }
+        }
+
+    }
+
+    &.grid {
+
+        ul.featuredCards-list {
+            margin: 0 -20px;
+
+            li.featuredCards-item+li {
+                margin-top: 20px;
+
+                @media (min-width: 551px) {
+                    margin-top: 0;
+                }
+            }
+
+            li.featuredCards-item {
+                @media (min-width: 551px) {
+                    margin-bottom: 20px;
+                }
+
+                @media (min-width: 1024px) {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+
+        &.cardNumber--six {
+            ul.featuredCards-list {
+                flex-wrap: wrap;
+
+                li.featuredCards-item {
+                    width: 100%;
+                    flex: initial;
+
+                    @media (min-width: 551px) {
+                        width: 50%;
+                    }
+
+                    @media (min-width: 768px) {
+                        width: 33.33%;
+                    }
+
+                    @media (min-width: 901px) {
+                        width: 25%;
+                    }
+
+                    @media (min-width: 1024px) {
+                        width: 20%;
+                    }
+
+                    @media (min-width: 1261px) {
+                        width: 16.667%;
+                    }
+                }
+            }
+        }
+
+        &.cardNumber--five {
+            ul.featuredCards-list {
+                flex-wrap: wrap;
+
+                li.featuredCards-item {
+                    width: 100%;
+                    flex: initial;
+
+                    @media (min-width: 551px) {
+                        width: 50%;
+                    }
+
+                    @media (min-width: 768px) {
+                        width: 33.33%;
+                    }
+
+                    @media (min-width: 901px) {
+                        width: 25%;
+                    }
+
+                    @media (min-width: 1024px) {
+                        width: 20%;
+                    }
+                }
+            }
+        }
+
+        &.cardNumber--four {
+            ul.featuredCards-list {
+                flex-wrap: wrap;
+
+                li.featuredCards-item {
+                    width: 100%;
+                    flex: initial;
+
+                    @media (min-width: 551px) {
+                        width: 50%;
+                    }
+
+                    @media (min-width: 801px) {
+                        width: 33.33%;
+                    }
+
+                    @media (min-width: 1024px) {
+                        width: 25%;
+                    }
+                }
+            }
+        }
+        
+        &.cardNumber--three {
+            ul.featuredCards-list {
+                flex-wrap: wrap;
+
+                li.featuredCards-item {
+                    width: 100%;
+                    flex: initial;
+
+                    @media (min-width: 551px) {
+                        width: 50%;
+                    }
+
+                    @media (min-width: 801px) {
+                        width: 33.33%;
+                    }
+                }
+            }
+        }
+    }
+
+    &.carousel {
+        ul.featuredCards-list.slick-slider {
+            width: 100%;
+            display: block;
+
+            div.slick-list.draggable {
+                width: 100%;
+
+                li.featuredCards-item {
+                    flex: initial;
                 }
             }
         }

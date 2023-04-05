@@ -6,10 +6,11 @@
 
     #featuredCards--{{_.id}} .featuredCards-img img {
         border-radius: {{image_radius}}%;
+        object-fit: {{object_fit}};
     }
 
     #featuredCards--{{_.id}} .featuredCards-action {
-        font-size: {{button_font_size_mobile}};
+        font-size: {{button_font_size_mobile}}px;
         color: {{button_text_color}};
         background-color: {{button_color}};
         border-radius: {{button_radius}}px;
@@ -40,7 +41,9 @@
     }
 </style>
 
-<div class='featuredCards' id='featuredCards--{{_.id}}'>
+
+
+<div class='featuredCards {{layout}} cardNumber--{{cards-per-row}}' id='featuredCards--{{_.id}}'>
     {{#if heading.length}}
         <h2 class='featuredCards-title'>{{heading}}</h2>
     {{/if}}
@@ -59,8 +62,5 @@
         {{/each}}
     </ul>
 </div>
-
-
-
 
 

@@ -311,12 +311,43 @@
             },
             {
                 "label": "Button Settings",
-                "settings": [
-                    {
+                "settings": [{
                         "type": "visibility",
                         "label": "Show Button #1",
                         "id": "show_btn_1",
                         "default": "hide"
+                    },
+                    {
+                        "type": "input",
+                        "label": "Button #1 URL",
+                        "id": "link_url_1",
+                        "default": "",
+                        "typeMeta": {
+                            "placeholder": "enter url"
+                        },
+                        "conditional": {
+                            "key": "show_btn_1",
+                            "operator": "IN",
+                            "value": [
+                                "show"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "input",
+                        "label": "Button #1 Text",
+                        "id": "action_text_1",
+                        "default": "",
+                        "typeMeta": {
+                            "placeholder": "enter text"
+                        },
+                        "conditional": {
+                            "key": "show_btn_1",
+                            "operator": "IN",
+                            "value": [
+                                "show"
+                            ]
+                        }
                     },
                     {
                         "type": "visibility",
@@ -325,16 +356,112 @@
                         "default": "hide"
                     },
                     {
+                        "type": "input",
+                        "label": "Button #2 URL",
+                        "id": "link_url_2",
+                        "default": "",
+                        "typeMeta": {
+                            "placeholder": "enter url"
+                        },
+                        "conditional": {
+                            "key": "show_btn_2",
+                            "operator": "IN",
+                            "value": [
+                                "show"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "input",
+                        "label": "Button #2 Text",
+                        "id": "action_text_2",
+                        "default": "",
+                        "typeMeta": {
+                            "placeholder": "enter text"
+                        },
+                        "conditional": {
+                            "key": "show_btn_2",
+                            "operator": "IN",
+                            "value": [
+                                "show"
+                            ]
+                        }
+                    },
+                    {
                         "type": "visibility",
                         "label": "Show Button #3",
                         "id": "show_btn_3",
                         "default": "hide"
                     },
                     {
+                        "type": "input",
+                        "label": "Button #3 URL",
+                        "id": "link_url_3",
+                        "default": "",
+                        "typeMeta": {
+                            "placeholder": "enter url"
+                        },
+                        "conditional": {
+                            "key": "show_btn_3",
+                            "operator": "IN",
+                            "value": [
+                                "show"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "input",
+                        "label": "Button #3 Text",
+                        "id": "action_text_3",
+                        "default": "",
+                        "typeMeta": {
+                            "placeholder": "enter text"
+                        },
+                        "conditional": {
+                            "key": "show_btn_3",
+                            "operator": "IN",
+                            "value": [
+                                "show"
+                            ]
+                        }
+                    },
+                    {
                         "type": "visibility",
                         "label": "Show Button #4",
                         "id": "show_btn_4",
                         "default": "hide"
+                    },
+                    {
+                        "type": "input",
+                        "label": "Button #4 URL",
+                        "id": "link_url_4",
+                        "default": "",
+                        "typeMeta": {
+                            "placeholder": "enter url"
+                        },
+                        "conditional": {
+                            "key": "show_btn_4",
+                            "operator": "IN",
+                            "value": [
+                                "show"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "input",
+                        "label": "Button #4 Text",
+                        "id": "action_text_4",
+                        "default": "",
+                        "typeMeta": {
+                            "placeholder": "enter text"
+                        },
+                        "conditional": {
+                            "key": "show_btn_4",
+                            "operator": "IN",
+                            "value": [
+                                "show"
+                            ]
+                        }
                     },
                     {
                         "type": "select",
@@ -390,134 +517,6 @@
                         "label": "Button Color (Hover)",
                         "id": "button_bg_color_hover",
                         "default": "#000"
-                    },
-                    {
-                        "type": "input",
-                        "label": "Button #1 URL",
-                        "id": "link_url_1",
-                        "default": "",
-                        "typeMeta": {
-                            "placeholder": "enter url"
-                        },
-                        "conditional": {
-                            "key": "show_btn_1",
-                            "operator": "IN",
-                            "value": [
-                                "show"
-                            ]
-                        }
-                    },
-                    {
-                        "type": "input",
-                        "label": "Button #1 Text",
-                        "id": "action_text_1",
-                        "default": "",
-                        "typeMeta": {
-                            "placeholder": "enter text"
-                        },
-                        "conditional": {
-                            "key": "show_btn_1",
-                            "operator": "IN",
-                            "value": [
-                                "show"
-                            ]
-                        }
-                    },
-                    {
-                        "type": "input",
-                        "label": "Button #2 URL",
-                        "id": "link_url_2",
-                        "default": "",
-                        "typeMeta": {
-                            "placeholder": "enter url"
-                        },
-                        "conditional": {
-                            "key": "show_btn_2",
-                            "operator": "IN",
-                            "value": [
-                                "show"
-                            ]
-                        }
-                    },
-                    {
-                        "type": "input",
-                        "label": "Button #2 Text",
-                        "id": "action_text_2",
-                        "default": "",
-                        "typeMeta": {
-                            "placeholder": "enter text"
-                        },
-                        "conditional": {
-                            "key": "show_btn_2",
-                            "operator": "IN",
-                            "value": [
-                                "show"
-                            ]
-                        }
-                    },
-                    {
-                        "type": "input",
-                        "label": "Button #3 URL",
-                        "id": "link_url_3",
-                        "default": "",
-                        "typeMeta": {
-                            "placeholder": "enter url"
-                        },
-                        "conditional": {
-                            "key": "show_btn_3",
-                            "operator": "IN",
-                            "value": [
-                                "show"
-                            ]
-                        }
-                    },
-                    {
-                        "type": "input",
-                        "label": "Button #3 Text",
-                        "id": "action_text_3",
-                        "default": "",
-                        "typeMeta": {
-                            "placeholder": "enter text"
-                        },
-                        "conditional": {
-                            "key": "show_btn_3",
-                            "operator": "IN",
-                            "value": [
-                                "show"
-                            ]
-                        }
-                    },
-                    {
-                        "type": "input",
-                        "label": "Button #4 URL",
-                        "id": "link_url_4",
-                        "default": "",
-                        "typeMeta": {
-                            "placeholder": "enter url"
-                        },
-                        "conditional": {
-                            "key": "show_btn_4",
-                            "operator": "IN",
-                            "value": [
-                                "show"
-                            ]
-                        }
-                    },
-                    {
-                        "type": "input",
-                        "label": "Button #4 Text",
-                        "id": "action_text_4",
-                        "default": "",
-                        "typeMeta": {
-                            "placeholder": "enter text"
-                        },
-                        "conditional": {
-                            "key": "show_btn_4",
-                            "operator": "IN",
-                            "value": [
-                                "show"
-                            ]
-                        }
                     }
                 ]
             }

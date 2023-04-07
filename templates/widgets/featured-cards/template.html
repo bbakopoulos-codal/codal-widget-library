@@ -45,7 +45,7 @@
 
 <div class='featuredCards {{layout}} cardNumber--{{cards-per-row}}' id='featuredCards--{{_.id}}'>
     {{#if heading.length}}
-        <h2 class='featuredCards-title'>{{heading}}</h2>
+        <{{#if main_heading.length}}{{main_heading}}{{else}}h2{{/if}} class='featuredCards-title'>{{heading}}</{{#if main_heading.length}}{{main_heading}}{{else}}h2{{/if}}>
     {{/if}}
     <ul class='featuredCards-list'>
         {{#each featuredCard}}
